@@ -1,0 +1,21 @@
+REPONSE 
+
+
+1,2,3,4,5 Il s'agit des programmes
+
+6. Dans le cadre du projet, nous avons developpé 5 classes
+à savoir ( FGeometrique, Cercle, Triangle, Rectangle et DataRectangle)
+
+8. A part l'heritage, nous pouvons utiliser aussi 
+la technique de polymorphisme qui consite à utiliser 
+les methodes de classes ( Rectangle -* Carre par exemple)
+Puisque la technique que nous avons utilisé est celle de l'utilisation 
+du polymorphisme, priere directement de voir notre code 
+de la question 7 , puisque l'on pouvait bien utiliser 
+aussi l'heritage pur pour les deux sous classes 
+Carre et Triangle Rectangle
+
+9. Le temps d'execution est d'ordre O(1) , c'est à dire 
+le temps constant, est difficilement battable puisque le 
+temps d’exécution est toujours le même, indépendamment de
+ la valeur d’entrée
