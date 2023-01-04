@@ -5,14 +5,37 @@ Created on Tue Jan  3 14:42:40 2023
 @author: mrx
 """
 
+
+from abc import abstractmethod, ABCMeta
+
+
 class FGeometrique:    
-    """ La classe de base ou superclasse Forme géometrique"""     
+    couleur = "White"   
+    nb_rectangle = 0 
+    nb_cercle = 0
+    nb_triangle = 0    
     
-    def __init__(self,couleur,perimetre,surface):
-        self.couleur = couleur
+    def __init__(self,couleur,surface,perimetre):
+        self.couleur = couleur 
+        self.surface = surface
         self.perimetre = perimetre      
-        self.surface = surface            
+        
+    @abstractmethod 
+    def getCouleur(self):
+        return self.couleur
     
+    @abstractmethod 
+    def setCouleur(self,couleur):
+        self.couleur = couleur
+        return self.couleur
+    
+    @abstractmethod 
+    def getSurface(self,surface):       
+       return self.surface
+   
+    @abstractmethod
+    def getPerimetre(self,perimetre):
+        return self.perimetre
     
 class Rectangle(FGeometrique):
     """ Classe Rectangle avec juste son constructeur et quelques choses 
