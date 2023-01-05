@@ -10,7 +10,7 @@ from abc import abstractmethod, ABCMeta
 from math import sqrt
 
 class FGeometrique:
-    
+    noms_developpeurs = "Maruba Exaucé , Twite , Murhabazi"
     couleur = "Blue"   
     nb_rectangle = 0 
     nb_cercle = 0
