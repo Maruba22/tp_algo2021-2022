@@ -115,8 +115,8 @@ class Triangle(FGeometrique):
         print(f" Couleur : {self.couleur} \n ")
       
     @classmethod    
-    def Rectangle(cls,hypo,adj,cath):
-        return cls(hypo,adj,cath)
+    def Rectangle(cls,a,b):
+        return cls(a,b,sqrt((a**2 +b**2)))
 
 
 
