@@ -137,4 +137,34 @@ class DataRectangle:
 if __name__ == '__main__':
     print("\n Ma batterie de test complete...")
     
+    r = Rectangle(12,5)
+    print(r)
+    print("Largeur :  ",r.largeur,"Longueur : " , r.longueur, "Couleur ", r.couleur)
+    r.setCouleur("Grise")
+    print("Nouvelle couleur  : ", r.couleur)
+    
+    print("Surface : ", r.getSurface(), "Perimetre : ", r.getPerimetre(), "\n")
+    r.dessiner()
+    r.monRectangle()
+    
+    
+    r_2 = Rectangle(3,8)
+    r_2.setCouleur("Orange")
+    r_2.monRectangle()
+    r_2.dessiner()
+    
+    
+    car  = Rectangle.Carre(12)
+    car.setCouleur("Violet")
+    car.monRectangle()
+    car.dessiner()
+    print(car.longueur)
+    
+    tr = Triangle(5,8,9)
+    print("Mes cotés sont : ",tr.longueur_a, tr.longueur_b, tr.longueur_c)
+    
+    
+    
+    
+    
     
