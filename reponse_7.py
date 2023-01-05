@@ -204,6 +204,9 @@ if __name__ == '__main__':
     
     
     
+    fig = DataRectangle()
+    print(fig.surfaceRectangle())
+    print(fig.perimetreRectangle())
     
     
     
