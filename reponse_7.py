@@ -198,6 +198,11 @@ if __name__ == '__main__':
     print(cir.getSurface())
     print(cir.getPerimetre())
     
+    rect= Rectangle(50, 65)
+    rect.getPerimetre()
+    d = DataRectangle()
+    
+    
     
     
     
