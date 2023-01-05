@@ -17,6 +17,10 @@ Carre et Triangle Rectangle
 9. Le temps d'execution est d'ordre O(1) , c'est à dire 
 le temps constant, temps d’exécution est toujours le même, indépendamment de
  la valeur d’entrée.
+Nous avons mesurere temps d execution en utilisant le module time comme suit 
+
+
+
 
 10. Si nous devons choisir entre les deux solutions nous opterons pour
 la technique utilisant le polymorphisme. Puisqu'il offre moins de travail :
