@@ -187,9 +187,21 @@ if __name__ == '__main__':
     trianCed = Triangle(12,12,12)
     trianCed.setCouleur("Rouge")
     trianCed.monTriangle()
-
-
-
+    
+    
+    
+    cir= Cercle(16)
+    print(cir.rayon)
+    print(cir.couleur)
+    cir.setCouleur("Noir")
+    print(cir.couleur)
+    print(cir.getSurface())
+    print(cir.getPerimetre())
+    
+    
+    
+    
+    
 
     
     
