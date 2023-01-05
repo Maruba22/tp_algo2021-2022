@@ -163,6 +163,19 @@ if __name__ == '__main__':
     tr = Triangle(5,8,9)
     print("Mes cotés sont : ",tr.longueur_a, tr.longueur_b, tr.longueur_c)
     
+    tr.monTriangle()
+
+    tr.setCouleur("Blanc")
+    print(tr.getPerimetre())
+    print(tr.getSurface())
+    print(tr.getCouleur())
+    
+    
+    cer = Cercle(16)
+    cer.monCercle()
+    cer.setCouleur("Noir")
+    cer.rayon = 50
+    cer.monCercle()
     
     
     
