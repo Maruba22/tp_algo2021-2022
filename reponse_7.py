@@ -123,8 +123,8 @@ class Triangle(FGeometrique):
 
 class DataRectangle:
     def __init__(self):
-        self.l = float(input("longueur ..."))
-        self.L = float(input("Largeur ..."))        
+        self.l = float(input("Entrer la longueur :"))
+        self.L = float(input("Entrer la Largeur :"))        
         
     def surfaceRectangle(self):        
         rec = Rectangle(self.L, self.l)
@@ -137,6 +137,7 @@ class DataRectangle:
 if __name__ == '__main__':
     print("\n Ma batterie de test complete...")
     
+    print("Test rectangle")
     r = Rectangle(12,5)
     print(r)
     print("Largeur :  ",r.largeur,"Longueur : " , r.longueur, "Couleur ", r.couleur)
@@ -153,13 +154,14 @@ if __name__ == '__main__':
     r_2.monRectangle()
     r_2.dessiner()
     
-    
+    print("test carré")
     car  = Rectangle.Carre(12)
     car.setCouleur("Violet")
     car.monRectangle()
     car.dessiner()
     print(car.longueur)
     
+    print("test triangle")
     tr = Triangle(5,8,9)
     print("Mes cotés sont : ",tr.longueur_a, tr.longueur_b, tr.longueur_c)
     
@@ -170,13 +172,22 @@ if __name__ == '__main__':
     print(tr.getSurface())
     print(tr.getCouleur())
     
-    
+    print("test cercle")
     cer = Cercle(16)
     cer.monCercle()
     cer.setCouleur("Noir")
     cer.rayon = 50
     cer.monCercle()
     
+    drec = DataRectangle()
+    drec.surfaceRectangle()
+    drec.perimetreRectangle()
+    
+    
+
+
+
+
     
     
     
