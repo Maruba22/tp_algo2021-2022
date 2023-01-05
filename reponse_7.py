@@ -179,11 +179,14 @@ if __name__ == '__main__':
     cer.rayon = 50
     cer.monCercle()
     
-    drec = DataRectangle()
-    drec.surfaceRectangle()
-    drec.perimetreRectangle()
     
+    trian = Triangle(4,9,10)
+    trian.setCouleur("Verte")
+    trian.monTriangle()
     
+    trianCed = Triangle(12,12,12)
+    trianCed.setCouleur("Rouge")
+    trianCed.monTriangle()
 
 
 
