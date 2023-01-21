@@ -18,15 +18,24 @@ class TestModule(ut.TestCase):
         self.assertEqual(rect.getSurface(),4)
         self.assertEqual(rect.getCouleur(),'Blue')
         self.assertEqual(rect.getPerimetre(),10)         
-        self.assertNotEqual(rect.setCouleur("Blue"), "Rouge")
+        self.assertNotEqual(rect.setCouleur("Blue"), "Rouge") 
         
-        
+        rectangle = moncode.Rectangle(0, 0)
+        self.assertEqual(rectangle.getSurface(), 0)
+        self.assertNotEqual(rectangle.getPerimetre(),10)         
+
+
     
     def test_cercle(self):        
-        self.assertTrue(cerc.getSurface(),12.566)
-        self.assertTrue(cerc.getCouleur(),'Blue')
-        self.assertTrue(cerc.getPerimetre(),4)
+        self.assertNotEqual(cerc.getSurface(),4)
+        self.assertIn(cerc.getCouleur(), "Blue")
+        self.assertNotEqual(cerc.getPerimetre(),4)
         self.assertNotEqual(cerc.setCouleur("Argent"), "Grise")
+        
+        cercle = moncode.Cercle(0)
+        self.assertNotEqual(cercle.getSurface(),4)
+        self.assertNotEqual(cercle.getPerimetre(),4)
+
 
         
     def test_tria(self):
@@ -34,6 +43,11 @@ class TestModule(ut.TestCase):
         self.assertNotEqual(tria.getCouleur(),'Chocolat')
         self.assertEqual(tria.getPerimetre(),14)
         self.assertNotEqual(tria.setCouleur("Blue"), "Violet")
+        
+        triangle = moncode.Triangle(0, 0, 0)
+        self.assertNotEqual(tria.getSurface(),0)
+        self.assertNotEqual(tria.getPerimetre(),0)
+        
         
     def test_triRect(self):
         self.assertNotEqual(triRect.getSurface(),4)
