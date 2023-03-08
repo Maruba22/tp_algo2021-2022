@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Mar  8 15:26:31 2023
+
+@author: Maruba
+"""
+import unittest
 
 class ArrayStack:
   """LIFO pile basée sur Python"""
@@ -40,8 +47,25 @@ class ArrayStack:
 
 
 if __name__ == '__main__':
-    print("Salut Maruba")
+    unittest.main()
     
+    p1 = ArrayStack()
+    p1.push(19)
+    p1.push(20)
+    print(p1.__len__())
+    p1.pop()
+    print(p1.__len__())
+    p1.top()
+    
+    for x in range(12,54):
+        p1._data.append(x)
+    
+    for y in p1._data:
+        print(y)
+        
+  
+        
+  
     
     
     
